@@ -1,4 +1,23 @@
-<svg
+import React from 'react'
+import AboutImg from "../../assets/about.jpg"
+import CV from "../../assets/CV_Partha.pdf"
+import Info from './Info'
+import "./about.css"
+
+const About = () => {
+  return (
+    <section className="about section" id="about">
+        <h2 className="section__title">About Me</h2>
+        <span className="section__subtitle">My introduction</span>
+        <div className="about__container container grid">
+          <img src={AboutImg} alt="" className="about__img" />
+          <div className="about__data">
+            <Info/>
+            <p className="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quia eum ea explicabo facere quasi unde a voluptate perspiciatis facilis, non voluptas aliquid adipisci quis ipsa architecto cupiditate laborum voluptatum?
+            </p>
+            <a download="" href={CV} className="button button--flex">
+              Download CV
+              <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -22,4 +41,12 @@
                   d="M11.25 17.7502H7.25C6.84 17.7502 6.5 17.4102 6.5 17.0002C6.5 16.5902 6.84 16.2502 7.25 16.2502H11.25C11.66 16.2502 12 16.5902 12 17.0002C12 17.4102 11.66 17.7502 11.25 17.7502Z"
                   fill="var(--container-color)"
                 ></path>
-</svg>
+              </svg>
+            </a>
+          </div>
+        </div>
+    </section>
+  )
+}
+
+export default About
