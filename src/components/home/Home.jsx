@@ -7,7 +7,7 @@ import Data from './Data'
 
 const Home = () => {
   return (
-    <section className="home section" id="home">
+    <section className="home section" id="home" style={{ backgroundColor: 'rgba(94, 85, 85, 0.1)' }}>
         <div className="home__container container grid">
             <div className='home__content grid'>
                 <Social/>
