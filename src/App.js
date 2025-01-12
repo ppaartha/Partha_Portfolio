@@ -8,6 +8,7 @@ import Achievement from "./components/achievement/Achievement";
 import Qualification from "./components/qualification/Qualification";
 import Footer from "./components/footer/Footer";
 import Testimonials from "./components/testimonials/Testimonials";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Services/>
         <Qualification/>
         <Achievement/>
+        <Contact/>
         <Testimonials/>
         <Footer/>
       

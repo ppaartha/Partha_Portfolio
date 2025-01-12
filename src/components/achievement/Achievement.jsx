@@ -4,7 +4,7 @@ import "./achievement.css"
 
 const Achievement = () => {
   return (
-    <section className="about section" id="about" style={{ backgroundColor: 'rgba(94, 85, 85, 0.1)' }}>
+    <section className="achievement section" id="achievement" style={{ backgroundColor: 'rgba(94, 85, 85, 0.1)' }}>
         <h2 className="section__title">Achievements</h2>
         <span className="section__subtitle">My Achievements</span>
         <div className="achievement__container container grid">
