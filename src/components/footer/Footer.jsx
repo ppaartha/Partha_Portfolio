@@ -24,14 +24,14 @@ const Footer = () => {
           </li>
         </ul>
         <div className="footer__social">
-          <a href="#" className="footer__social-link" target="_blank">
+          <a href="https://www.facebook.com/partha.ghosh.344658/" className="footer__social-link" target="_blank">
             <i class="bx bxl-facebook"></i>
           </a>
-          <a href="#" className="footer__social-link" target="_blank">
+          <a href="https://www.instagram.com/ppaartha/" className="footer__social-link" target="_blank">
             <i class="bx bxl-instagram"></i>
           </a>
-          <a href="#" className="footer__social-link" target="_blank">
-            <i class="bx bxl-twitter"></i>
+          <a href="https://www.linkedin.com/in/ppaartha/" className="footer__social-link" target="_blank">
+            <i class="bx bxl-linkedin"></i>
           </a>
         </div>
         <span className="footer__copy">

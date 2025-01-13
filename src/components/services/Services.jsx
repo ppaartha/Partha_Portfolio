@@ -4,11 +4,9 @@ import "./services.css";
 const Services = () => {
 
   const [toggleState, setToggleState] = useState(0);
-  const toggleTab = (index)=>{
+  const toggleTab = (index) => {
     setToggleState(index);
   }
-
-
 
   return (
     <section className="services section" id="services">
@@ -23,7 +21,7 @@ const Services = () => {
           <span className="services__button" onClick={()=>toggleTab(1)}>
             View More<i className="uil uil-arrow-circle-right services__button-icon"></i>
           </span>
-          <div className={toggleState == 1 ? "services__modal active-modal":"services__modal"}>
+          <div className={toggleState === 1 ? "services__modal active-modal":"services__modal"}>
             <div className="services__modal-content">
               <i onClick={()=>toggleTab(0)} className="uil uil-times services__modal-close"></i>
               <h3 className="services__modal-title">hello1</h3>
@@ -58,7 +56,7 @@ const Services = () => {
           <span className="services__button" onClick={()=>toggleTab(2)}>
             View More<i className="uil uil-arrow-circle-right services__button-icon"></i>
           </span>
-          <div className={toggleState == 2 ? "services__modal active-modal":"services__modal"}>
+          <div className={toggleState === 2 ? "services__modal active-modal":"services__modal"}>
             <div className="services__modal-content">
               <i onClick={()=>toggleTab(0)} className="uil uil-times services__modal-close"></i>
               <h3 className="services__modal-title">hello2</h3>
@@ -93,7 +91,7 @@ const Services = () => {
           <span className="services__button" onClick={()=>toggleTab(3)}>
             View More<i className="uil uil-arrow-circle-right services__button-icon"></i>
           </span>
-          <div className={toggleState == 3 ? "services__modal active-modal":"services__modal"}>
+          <div className={toggleState === 3 ? "services__modal active-modal":"services__modal"}>
             <div className="services__modal-content">
               <i onClick={()=>toggleTab(0)} className="uil uil-times services__modal-close"></i>
               <h3 className="services__modal-title">hello3</h3>

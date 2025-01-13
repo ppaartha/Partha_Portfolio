@@ -33,20 +33,21 @@
 }
 
 .contact__card-title,
-.contact__card-data{
+.contact__card-data {
     font-size: var(--small-font-size);
 }
 
-.contact__card-title{
+/* .contact__card-title{
     font-weight: var(--font-medium);
-}
+} */
 .contact__card-data{
+    padding-top: 0.5rem;
     display: block;
     margin-bottom: var(--mb-0-75);
 }
 
 .contact__button{
-    color: var(--text-color);
+    color: rgba(33, 33, 167, 0.875);
     font-size: var(--small-font-size);
     display: inline-flex;
     align-items: center;
@@ -100,7 +101,7 @@
 }
 
 .contact__form-area{
-    height: 11rem;
+    height: 12.5rem;
 }
 
 .contact__form-area textarea{
