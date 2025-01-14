@@ -18,7 +18,7 @@ const Services = () => {
           <div>
             {/* <i className="uil uil-web-grid services__icon"></i> */}
             <img src={reve} alt="" className="company__img"/>
-            <h3 className="services__title">REVE Systems</h3>
+            {/* <h3 className="services__title">REVE Systems</h3> */}
             <p>Machine Learning Engineer</p>
           </div>
           <span className="services__button" onClick={() => toggleTab(1)}>
@@ -111,7 +111,7 @@ const Services = () => {
           <div>
             {/* <i className="uil uil-arrow services__icon"></i> */}
             <img src={codelab} alt="" className="company__img" />
-            <h3 className="services__title">Codelab FZC</h3>
+            {/* <h3 className="services__title">Codelab FZC</h3> */}
             <p>Software Engineer</p>
           </div>
           <span className="services__button" onClick={() => toggleTab(2)}>

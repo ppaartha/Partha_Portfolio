@@ -59,7 +59,7 @@ const Qualification = () => {
                     BSc in Computer Science and Engineering
                   </span>
                   <br />
-                  <span className="qualification__subtitle">CGPA: 5.00</span>
+                  <span className="qualification__subtitle">CGPA: 3.35</span>
                   <div className="qualification__calender">
                     <i className="uil uil-calender"></i>
                     2018-2023
