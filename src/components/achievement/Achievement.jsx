@@ -10,6 +10,7 @@ const Achievement = () => {
         <div className="achievement__container container grid">
           
           <div className="achievement__data">
+            <h1>1st Runner Up in AI For Bangla 2.0</h1>
             <p className="achievement__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quia eum ea explicabo facere quasi unde a voluptate perspiciatis facilis, non voluptas aliquid adipisci quis ipsa architecto cupiditate laborum voluptatum?
             </p>
           </div>
