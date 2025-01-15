@@ -108,6 +108,15 @@
     resize: none;
 }
 
+.send__button {
+    display: inline-block;
+    background-color: var(--title-color);
+    color: var(--container-color);
+    padding: 1.25rem 3rem;
+    border-radius: 1rem;
+    font-weight: var(--font-medium);
+  }
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {

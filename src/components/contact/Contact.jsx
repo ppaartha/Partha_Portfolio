@@ -37,9 +37,9 @@ const Contact = () => {
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon">
                 <h3 className="contact__card-title">Email</h3>
-                <span className="contact__card-data">user@gmail.com</span>
+                <span className="contact__card-data">parthaghoshub361@gmail.com</span>
                 <a
-                  href="mailto:parthaghosh1739@gmail.com"
+                  href="mailto:parthaghoshub361@gmail.com"
                   className="contact__button"
                 >
                   Write Me<i className="bx bx-right-arrow-alt"></i>
@@ -51,14 +51,14 @@ const Contact = () => {
                 <h3 className="contact__card-title">Whatsapp</h3>
                 <span className="contact__card-data">+8801912-896129</span>
                 <a
-                  href="https://api.whatsapp.com/send?phone=+8801840496437&text=Hello, more information"
+                  href="https://api.whatsapp.com/send?phone=+8801912896129&text=Hello, more information"
                   className="contact__button"
                 >
                   Write Me<i className="bx bx-right-arrow-alt"></i>
                 </a>
               </i>
             </div>
-            <div className="contact__card">
+            {/* <div className="contact__card">
               <i className="bx bxl-messenger contact__card-icon">
                 <h3 className="contact__card-title">Messenger</h3>
                 <span className="contact__card-data">user.123</span>
@@ -66,7 +66,7 @@ const Contact = () => {
                   Write Me<i className="bx bx-right-arrow-alt"></i>
                 </a>
               </i>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="contact__content">
@@ -100,7 +100,7 @@ const Contact = () => {
                 placeholder="Write Your Message"
               />
             </div>
-            <button className="button button--flex" type="submit">
+            <button className="send__button button--flex" type="submit">
               Send
               <svg
                 className="button__icon"

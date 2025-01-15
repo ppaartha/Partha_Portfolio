@@ -26,7 +26,7 @@ function App() {
         <Achievement/>
         <Contact/>
         <Testimonials/>
-        <Score/>
+        {/* <Score/> */}
         <Footer/>
       
       </main>

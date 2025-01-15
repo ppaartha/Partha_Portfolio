@@ -54,12 +54,12 @@ const Header = () => {
                 Achievement
               </a>
             </li>
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <a href="#score" className="nav__link">
                 <i className="uil uil-scenery nav__icon"></i>
                 Score
               </a>
-            </li>
+            </li> */}
             <li className="nav__item">
               <a href="#reference" className="nav__link">
                 <i className="uil uil-message nav__icon"></i>
