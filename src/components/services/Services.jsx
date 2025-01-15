@@ -10,7 +10,7 @@ const Services = () => {
   };
 
   return (
-    <section className="services section" id="services">
+    <section className="services section" id="experience">
       <h2 className="section__title">Experience</h2>
       <span className="section__subtitle">My Technical Level</span>
       <div className="services__container container grid">
@@ -46,7 +46,7 @@ const Services = () => {
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
                     Fine‐tuned Wav2vec 2.0 and Whisper model for Bengali STT
-                    (কথা), also utilizing PEFT‐LoRA. Analyzed performance on
+                    (<a href="https://voice.bangla.gov.bd/" style={{color:"blue"}}>কথা</a>), also utilizing PEFT‐LoRA. Analyzed performance on
                     various test sets, including augmented data, and compared
                     models to identify weaknesses.
                   </p>
@@ -54,7 +54,7 @@ const Services = () => {
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Fine‐tuned vits model for Bengali TTS (উচ্চারণ)
+                    Fine‐tuned vits model for Bengali TTS (<a href="https://read.bangla.gov.bd/" style={{color:"blue"}}>উচ্চারণ</a>)
                   </p>
                 </li>
                 <li className="services__modal-service">
@@ -70,7 +70,7 @@ const Services = () => {
                   <p className="services__modal-info">
                     Worked on RAG based chatbot using GraphRag, LightRag,
                     Multi‐Modal Rag, Agentic Rag and LangChain for enhanced AI
-                    chatbot (REVE CHAT) responses.
+                    chatbot (<a href="https://www.revechat.com/" style={{color:"blue"}}>REVE CHAT</a>) responses.
                   </p>
                 </li>
                 <li className="services__modal-service">

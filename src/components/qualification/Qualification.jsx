@@ -11,7 +11,7 @@ const Qualification = () => {
     console.log(toggleState);
   };
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="education">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My educations</span>
       <div className="qualification__container container">
