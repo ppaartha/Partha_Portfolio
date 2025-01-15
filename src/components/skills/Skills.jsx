@@ -3,6 +3,7 @@ import "./skills.css"
 import Frontend from './Frontend'
 import Backend from './Backend'
 import Ml from './Ml'
+import ProblemSolving from './ProblemSolving'
 
 
 const Skills = () => {
@@ -14,6 +15,7 @@ const Skills = () => {
             <Ml/>
             <Frontend/>
             <Backend/>
+            <ProblemSolving/>
         </div>
 
     </section>

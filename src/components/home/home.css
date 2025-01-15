@@ -2,7 +2,7 @@
     row-gap: 7rem;
 }
 .home__content {
-    grid-template-columns: 116px repeat(2, 1fr);
+    grid-template-columns: 150px repeat(2, 1fr);
     padding: 3rem;
     column-gap: 2rem;
     align-items: center;
@@ -34,6 +34,12 @@
     max-width: 400px;
     margin-bottom: var(--mb-3);
 }
+.home__buttons{
+    display: flex;
+    gap: 20px;
+
+}
+
 .home__img {
     background: url(../../assets//partha.jpg);
     background-repeat: no-repeat;
