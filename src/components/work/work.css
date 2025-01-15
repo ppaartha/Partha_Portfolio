@@ -43,6 +43,7 @@
 .work__img{
     width: 300px;
     margin-bottom: var(--mb-1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .work__title{

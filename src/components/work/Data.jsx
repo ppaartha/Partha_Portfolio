@@ -1,46 +1,52 @@
-import Work1 from "../../assets/work1.jpg"
-import Work2 from "../../assets/work2.jpg"
+import revechat from "../../assets/revechat.png"
+import tts from "../../assets/tts.png"
 import Work3 from "../../assets/work3.jpg"
-import Work4 from "../../assets/work4.jpg"
+import stt from "../../assets/stt.png"
 import Work5 from "../../assets/work5.jpg"
 
 
 export const projectData = [
   {
     id: 1,
-    image: Work1,
-    title: "Web design",
+    image: revechat,
+    title: "REVE CHAT",
     category: "company",
+    link: "https://www.revechat.com/",
   },
   {
     id: 2,
-    image: Work2,
-    title: "App movil",
+    image: tts,
+    title: "উচ্চারণ (Bangla TTS)",
     category: "company",
+    link: "https://read.bangla.gov.bd/"
   },
   {
     id: 3,
     image: Work3,
     title: "Brand design",
     category: "personal",
+    link: "https://read.bangla.gov.bd/"
   },
   {
     id: 4,
-    image: Work4,
-    title: "App movil",
+    image: stt,
+    title: "কথা (Bangla STT)",
     category: "company",
+    link: "https://voice.bangla.gov.bd/"
   },
   {
     id: 5,
     image: Work5,
     title: "Web design",
     category: "personal",
+    link: "https://read.bangla.gov.bd/"
   },
   {
     id: 6,
     image: Work5,
     title: "Web design",
     category: "personal",
+    link: "https://read.bangla.gov.bd/"
   },
 ];
 
