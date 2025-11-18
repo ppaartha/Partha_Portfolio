@@ -10,7 +10,7 @@ import Footer from "./components/footer/Footer";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Work from "./components/work/Work";
-import Score from "./components/score/Score";
+// import Score from "./components/score/Score";
 
 function App() {
   return (
