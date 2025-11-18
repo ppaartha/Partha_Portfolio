@@ -11,7 +11,7 @@ const Achievement = () => {
           
           <div className="achievement__data">
             <h1>1st Runner Up in AI For Bangla 2.0</h1>
-            <p className="achievement__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quia eum ea explicabo facere quasi unde a voluptate perspiciatis facilis, non voluptas aliquid adipisci quis ipsa architecto cupiditate laborum voluptatum?
+            <p className="achievement__description">We presented SUBAK.KO, a large-scale 241-hour Bangladeshi Bangla speech corpus designed to advance LVCSR research with rich speaker diversity across regions, accents, and domains. The dataset demonstrates strong ASR benchmark performance, achieving 5.29% CER and 16.69% WER using a CNN CTC model. Compared to spontaneous speech datasets which show higher variability and error rates SUBAK.KO provides a stable baseline for evaluating ASR systems. This corpus will serve as a benchmark for real-time spontaneous ASR development and made publicly available for research use.
             </p>
           </div>
           <img src={AchieveImg} alt="" className="achievement__img" />

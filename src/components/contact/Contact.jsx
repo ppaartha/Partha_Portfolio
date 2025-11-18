@@ -35,28 +35,30 @@ const Contact = () => {
           <h3 className="contact__title">Talk to me</h3>
           <div className="contact__info">
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon">
-                <h3 className="contact__card-title">Email</h3>
-                <span className="contact__card-data">parthaghoshub361@gmail.com</span>
-                <a
-                  href="mailto:parthaghoshub361@gmail.com"
-                  className="contact__button"
-                >
-                  Write Me<i className="bx bx-right-arrow-alt"></i>
-                </a>
-              </i>
+              <i className="bx bx-mail-send contact__card-icon"></i>
+              <h3 className="contact__card-title">Email</h3>
+              <span className="contact__card-data">parthaghoshub361@gmail.com</span>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=parthaghoshub361@gmail.com&su=Contact%20from%20Portfolio&body=Hello%20Partha,"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact__button"
+              >
+                Write Me<i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
             </div>
             <div className="contact__card">
-              <i className="bx bxl-whatsapp contact__card-icon">
-                <h3 className="contact__card-title">Whatsapp</h3>
-                <span className="contact__card-data">+8801912-896129</span>
-                <a
-                  href="https://api.whatsapp.com/send?phone=+8801912896129&text=Hello, more information"
-                  className="contact__button"
-                >
-                  Write Me<i className="bx bx-right-arrow-alt"></i>
-                </a>
-              </i>
+              <i className="bx bxl-whatsapp contact__card-icon"></i>
+              <h3 className="contact__card-title">Whatsapp</h3>
+              <span className="contact__card-data">+8801912-896129</span>
+              <a
+                href="https://api.whatsapp.com/send?phone=+8801912896129&text=Hello, more information"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact__button"
+              >
+                Write Me<i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
             </div>
             {/* <div className="contact__card">
               <i className="bx bxl-messenger contact__card-icon">

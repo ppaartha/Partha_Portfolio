@@ -13,7 +13,7 @@ const Testimonials = () => {
       <span className="section__subtitle"></span>
       <Swiper
         className="testimonial__container"
-        loop={true}
+        loop={Data.length > 1}
         grabCursor={true}
         spaceBetween={10}
         pagination={{
@@ -21,20 +21,35 @@ const Testimonials = () => {
         }}
         breakpoints={{
           576: {
-            slidesPerView: 2,
+            slidesPerView: Data.length === 1 ? 1 : 2,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: Data.length === 1 ? 1 : 2,
             spaceBetween: 48,
           },
         }}
         modules={[Pagination]}
+        centeredSlides={Data.length === 1}
       >
-        {Data.map(({ id, image, title, description }) => {
+        {Data.map(({ id, image, title, description, link }) => {
           return (
             <SwiperSlide className="testimonial__card" key={id}>
-              <img src={image} alt="" className="testimonial__img" />
-              <h3 className="testimonial__name">{title}</h3>
+              {link ? (
+                <a href={link} target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}}>
+                  <img src={image} alt="" className="testimonial__img" />
+                </a>
+              ) : (
+                <img src={image} alt="" className="testimonial__img" />
+              )}
+              <h3 className="testimonial__name">
+                {link ? (
+                  <a href={link} target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>
+                    {title}
+                  </a>
+                ) : (
+                  title
+                )}
+              </h3>
               <p className="testimonial__description">
                 {description.split("\n").map((line, index) => (
                   <p key={index}>{line}</p>

@@ -12,20 +12,21 @@ export const Data = [
         Dept. of Computer Science & Engineering
         Shahjalal University of Science & Technology, Sylhet.
         Email: rahmanms@sust.edu`,
+      link: "https://sust.edu/departments/cse/faculty/rahmanms@sust.edu",
     },
-    {
-      id: 2,
-      image: Image2,
-      title: "Harry Clinton",
-      description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
-    },
-    {
-      id: 3,
-      image: Image3,
-      title: "Sara Cill",
-      description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
-    },
+    // {
+    //   id: 2,
+    //   image: Image2,
+    //   title: "Harry Clinton",
+    //   description:
+    //     "A really good job, all aspects of the project were followed step by step and with good results.",
+    // },
+    // {
+    //   id: 3,
+    //   image: Image3,
+    //   title: "Sara Cill",
+    //   description:
+    //     "A really good job, all aspects of the project were followed step by step and with good results.",
+    // },
 ];
   

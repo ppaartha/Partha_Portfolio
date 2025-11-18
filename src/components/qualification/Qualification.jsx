@@ -50,10 +50,14 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div className="qualification__item">
-                <img src={sust} alt="" className="institute__img" />
+                <a href="https://sust.edu/" target="_blank" rel="noopener noreferrer">
+                  <img src={sust} alt="" className="institute__img" />
+                </a>
                 <div>
                   <h2 className="qualification__title">
-                    Shahjalal University of Science and Technology
+                    <a href="https://sust.edu/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>
+                      Shahjalal University of Science and Technology
+                    </a>
                   </h2>
                   <span className="qualification__subtitle">
                     BSc in Computer Science and Engineering
@@ -69,10 +73,14 @@ const Qualification = () => {
             </div>
             <div className="qualification__data">
               <div className="qualification__item">
-                <img src={joseph} alt="" className="institute__img" />
+                <a href="https://sjs.edu.bd/new/index.php" target="_blank" rel="noopener noreferrer">
+                  <img src={joseph} alt="" className="institute__img" />
+                </a>
                 <div>
                   <h2 className="qualification__title">
-                    St. Joseph Higher Secondary School
+                    <a href="https://sjs.edu.bd/new/index.php" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>
+                      St. Joseph Higher Secondary School
+                    </a>
                   </h2>
                   <span className="qualification__subtitle">
                     Higher Secondary Certificate (HSC)
@@ -88,10 +96,14 @@ const Qualification = () => {
             </div>
             <div className="qualification__data">
               <div className="qualification__item">
-                <img src={gregory} alt="" className="institute__img" />
+                <a href="https://sghscdhaka.edu.bd/" target="_blank" rel="noopener noreferrer">
+                  <img src={gregory} alt="" className="institute__img" />
+                </a>
                 <div>
                   <h2 className="qualification__title">
-                    St. Gregory's High School and College
+                    <a href="https://sghscdhaka.edu.bd/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>
+                      St. Gregory's High School and College
+                    </a>
                   </h2>
                   <span className="qualification__subtitle">
                     Secondary School Certificate (SSC)
@@ -151,6 +163,8 @@ const Qualification = () => {
                   selection.
                   <a
                     href="https://ieeexplore.ieee.org/document/10453554"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="readmore__button"
                   >
                     &nbsp;&nbsp;Read More

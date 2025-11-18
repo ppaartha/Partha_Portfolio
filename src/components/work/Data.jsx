@@ -12,41 +12,47 @@ export const projectData = [
     title: "REVE CHAT",
     category: "company",
     link: "https://www.revechat.com/",
+    description: "A modern omni-channel customer communication platform."
   },
   {
     id: 2,
     image: tts,
     title: "উচ্চারণ (Bangla TTS)",
     category: "company",
-    link: "https://read.bangla.gov.bd/"
+    link: "https://read.bangla.gov.bd/",
+    description: "State-of-the-art Bangla Text-to-Speech system."
   },
   {
     id: 3,
     image: Work3,
     title: "Brand design",
     category: "personal",
-    link: "https://read.bangla.gov.bd/"
+    link: "https://read.bangla.gov.bd/",
+    description: "Creative brand identity and UI design concept."
   },
   {
     id: 4,
     image: stt,
     title: "কথা (Bangla STT)",
     category: "company",
-    link: "https://voice.bangla.gov.bd/"
+    link: "https://voice.bangla.gov.bd/",
+    description: "Real-time speech-to-text recognition system for Bangla."
   },
   {
     id: 5,
     image: Work5,
     title: "Web design",
     category: "personal",
-    link: "https://read.bangla.gov.bd/"
+    link: "https://read.bangla.gov.bd/",
+    description: "Modern responsive website design example."
   },
   {
     id: 6,
     image: Work5,
     title: "Web design",
     category: "personal",
-    link: "https://read.bangla.gov.bd/"
+    link: "https://read.bangla.gov.bd/",
+    description: "Portfolio demo showcasing UI/UX creativity."
   },
 ];
 
