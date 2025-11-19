@@ -3,6 +3,10 @@
     max-width: 1000px;
 
 }
+.qualification{
+    background-color: rgba(94, 85, 85, 0.1);
+    /* border-top: 1px solid rgba(0,0,0,0.1); */
+}
 
 .qualification__tabs{
     display: flex;
