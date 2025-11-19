@@ -66,16 +66,6 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a 
-                href="#skills" 
-                className={activeSection === "skills" ? "nav__link active-link" : "nav__link"}
-                onClick={() => handleLinkClick("skills")}
-              >
-                <i className="uil uil-file-alt nav__icon"></i>
-                Skills
-              </a>
-            </li>
-            <li className="nav__item">
-              <a 
                 href="#experience" 
                 className={activeSection === "experience" ? "nav__link active-link" : "nav__link"}
                 onClick={() => handleLinkClick("experience")}
@@ -84,6 +74,17 @@ const Header = () => {
                 Experience
               </a>
             </li>
+            <li className="nav__item">
+              <a 
+                href="#skills" 
+                className={activeSection === "skills" ? "nav__link active-link" : "nav__link"}
+                onClick={() => handleLinkClick("skills")}
+              >
+                <i className="uil uil-file-alt nav__icon"></i>
+                Skills
+              </a>
+            </li>
+
             <li className="nav__item">
               <a 
                 href="#education" 

@@ -1,53 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import sust from "../../assets/sust.png";
 import gregory from "../../assets/gregory.jpeg";
 import joseph from "../../assets/joseph.png";
 import "./qualification.css";
 
 const Qualification = () => {
-  const [toggleState, setToggleState] = useState(1);
-  const toggleTab = (index) => {
-    setToggleState(index);
-    console.log(toggleState);
-  };
   return (
     <section className="qualification section" id="education">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My educations & Research Experience</span>
+      <h2 className="section__title">Educational Qualification</h2>
       <div className="qualification__container container">
-        <div className="qualification__tabs">
-          <div
-            className={
-              toggleState === 1
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
-            }
-            onClick={() => toggleTab(1)}
-          >
-            <i className="uil uil-graduation-cap qualification-icon">
-              Education
-            </i>
-          </div>
-          <div
-            className={
-              toggleState === 2
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
-            }
-            onClick={() => toggleTab(2)}
-          >
-            <i className="uil uil-credit-card-search qualification-icon"></i>
-            Research Experience
-          </div>
-        </div>
+
         <div className="qualification__sections">
-          <div
-            className={
-              toggleState === 1
-                ? "qualification__content qualification__content-active"
-                : "qualification__content"
-            }
-          >
+          <div>
             <div className="qualification__data">
               <div className="qualification__item">
                 <a href="https://sust.edu/" target="_blank" rel="noopener noreferrer">
@@ -119,7 +83,7 @@ const Qualification = () => {
             </div>
           </div>
 
-          <div
+          {/* <div
             className={
               toggleState === 2
                 ? "qualification__content qualification__content-active"
@@ -177,7 +141,7 @@ const Qualification = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

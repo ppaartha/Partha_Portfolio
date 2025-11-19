@@ -1,7 +1,11 @@
+.services{
+    background-color: rgba(94, 85, 85, 0.1);
+}
 .services__container{
     grid-template-columns: repeat(2,400px);
     justify-content: center;
     column-gap: 3rem;
+    margin-bottom: 80px; 
 
 }
 .services__content{
