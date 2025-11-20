@@ -29,7 +29,7 @@ const Qualification = () => {
                   <br />
                   <span className="qualification__subtitle">CGPA: 3.35</span>
                   <div className="qualification__calender">
-                    <i className="uil uil-calender"></i>
+                    <i className="uil uil-calender" style={{ marginRight: "8px" }}></i>
                     2018-2023
                   </div>
                 </div>
@@ -52,7 +52,7 @@ const Qualification = () => {
                   <br />
                   <span className="qualification__subtitle">GPA: 5.00</span>
                   <div className="qualification__calender">
-                    <i className="uil uil-calender"></i>
+                    <i className="uil uil-calender" style={{ marginRight: "8px" }}></i>
                     2015-2017
                   </div>
                 </div>
@@ -75,7 +75,7 @@ const Qualification = () => {
                   <br />
                   <span className="qualification__subtitle">GPA: 5.00</span>
                   <div className="qualification__calender">
-                    <i className="uil uil-calender"></i>
+                    <i className="uil uil-calender" style={{ marginRight: "8px" }}></i>
                     2005-2015
                   </div>
                 </div>

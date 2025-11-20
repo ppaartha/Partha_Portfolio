@@ -37,6 +37,7 @@ const Header = () => {
   };
 
   return (
+    <>
     <header className="header">
       <nav className="nav container">
         <a href="#home" className="nav__logo" onClick={() => handleLinkClick("home")}>
@@ -153,6 +154,10 @@ const Header = () => {
         </div>
       </nav>
     </header>
+    <div className="menu-button" onClick={() => showMenu(!Toggle)}>
+      <i className="uil uil-apps"></i>
+    </div>
+    </>
   );
 };
 

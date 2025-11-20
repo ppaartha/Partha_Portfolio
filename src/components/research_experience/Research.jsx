@@ -25,7 +25,7 @@ const Research = () => {
                   performance.
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender"></i>
+                  <i className="uil uil-calender" style={{ marginRight: "8px" }}></i>
                   2023-2024
                 </div>
               </div>
@@ -55,7 +55,7 @@ const Research = () => {
                   </a>
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender"></i>
+                  <i className="uil uil-calender" style={{ marginRight: "8px" }}></i>
                   2023-2024
                 </div>
               </div>
