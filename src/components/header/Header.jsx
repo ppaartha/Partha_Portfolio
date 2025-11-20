@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./header.css";
 
 const Header = () => {
-  // Toggle Menu
   const [Toggle, showMenu] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
@@ -25,7 +24,6 @@ const Header = () => {
 
     window.addEventListener("scroll", scrollActive);
     
-    // Set initial active section
     scrollActive();
 
     return () => window.removeEventListener("scroll", scrollActive);
@@ -48,7 +46,7 @@ const Header = () => {
             <li className="nav__item">
               <a 
                 href="#home" 
-                className={activeSection === "home" ? "nav__link active-link" : "nav__link"}
+                className={activeSection === "home" ? "nav__link active-nav" : "nav__link"}
                 onClick={() => handleLinkClick("home")}
               >
                 <i className="uil uil-estate nav__icon"></i>
@@ -58,7 +56,7 @@ const Header = () => {
             <li className="nav__item">
               <a 
                 href="#about" 
-                className={activeSection === "about" ? "nav__link active-link" : "nav__link"}
+                className={activeSection === "about" ? "nav__link active-nav" : "nav__link"}
                 onClick={() => handleLinkClick("about")}
               >
                 <i className="uil uil-user nav__icon"></i>
@@ -68,7 +66,7 @@ const Header = () => {
             <li className="nav__item">
               <a 
                 href="#experience" 
-                className={activeSection === "experience" ? "nav__link active-link" : "nav__link"}
+                className={activeSection === "experience" ? "nav__link active-nav" : "nav__link"}
                 onClick={() => handleLinkClick("experience")}
               >
                 <i className="uil uil-briefcase-alt nav__icon"></i>
@@ -78,7 +76,7 @@ const Header = () => {
             <li className="nav__item">
               <a 
                 href="#skills" 
-                className={activeSection === "skills" ? "nav__link active-link" : "nav__link"}
+                className={activeSection === "skills" ? "nav__link active-nav" : "nav__link"}
                 onClick={() => handleLinkClick("skills")}
               >
                 <i className="uil uil-file-alt nav__icon"></i>
@@ -89,7 +87,7 @@ const Header = () => {
             <li className="nav__item">
               <a 
                 href="#education" 
-                className={activeSection === "education" ? "nav__link active-link" : "nav__link"}
+                className={activeSection === "education" ? "nav__link active-nav" : "nav__link"}
                 onClick={() => handleLinkClick("education")}
               >
                 <i className="uil uil-briefcase-alt nav__icon"></i>
@@ -99,7 +97,7 @@ const Header = () => {
             <li className="nav__item">
               <a 
                 href="#projects" 
-                className={activeSection === "projects" ? "nav__link active-link" : "nav__link"}
+                className={activeSection === "projects" ? "nav__link active-nav" : "nav__link"}
                 onClick={() => handleLinkClick("projects")}
               >
                 <i className="uil uil-scenery nav__icon"></i>
@@ -109,7 +107,7 @@ const Header = () => {
             <li className="nav__item">
               <a 
                 href="#achievement" 
-                className={activeSection === "achievement" ? "nav__link active-link" : "nav__link"}
+                className={activeSection === "achievement" ? "nav__link active-nav" : "nav__link"}
                 onClick={() => handleLinkClick("achievement")}
               >
                 <i className="uil uil-scenery nav__icon"></i>
@@ -125,7 +123,7 @@ const Header = () => {
             <li className="nav__item">
               <a 
                 href="#contact" 
-                className={activeSection === "contact" ? "nav__link active-link" : "nav__link"}
+                className={activeSection === "contact" ? "nav__link active-nav" : "nav__link"}
                 onClick={() => handleLinkClick("contact")}
               >
                 <i className="uil uil-message nav__icon"></i>
@@ -135,7 +133,7 @@ const Header = () => {
             <li className="nav__item">
               <a 
                 href="#reference" 
-                className={activeSection === "reference" ? "nav__link active-link" : "nav__link"}
+                className={activeSection === "reference" ? "nav__link active-nav" : "nav__link"}
                 onClick={() => handleLinkClick("reference")}
               >
                 <i className="uil uil-message nav__icon"></i>
@@ -154,9 +152,7 @@ const Header = () => {
         </div>
       </nav>
     </header>
-    <div className="menu-button" onClick={() => showMenu(!Toggle)}>
-      <i className="uil uil-apps"></i>
-    </div>
+
     </>
   );
 };
