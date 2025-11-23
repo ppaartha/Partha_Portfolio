@@ -127,14 +127,17 @@
     
   }
   
-
-  
   /* For small devices */
-  @media screen and (max-width: 350px) {
-    .home__img{
-        width: 180px;
-        height: 180px;
+  @media screen and (max-width: 450px) {
+    .home__subtitle{
+        padding: 0rem 0rem;
     }
+
+
+    .home__data{
+        max-width: 270px;
+    }
+
     
   }
   
