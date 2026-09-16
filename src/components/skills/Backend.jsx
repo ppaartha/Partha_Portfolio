@@ -4,65 +4,18 @@ const Backend = () => {
   return (
     <div className="skills__content">
       <h3 className="skills__title">Backend & Database</h3>
-      <div className="skills__box">
-        <div className="skills__group">
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Django</h3>
-              <span className="skills__level">Advanced</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">FastAPI</h3>
-              <span className="skills__level">Advanced</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Laravel</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">MySQL</h3>
-              <span className="skills__level">Advanced</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">MongoDB</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Qdrant (VectorDB)</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Memgraph (GraphDB)</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Firebase</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-        </div>
+      <div className="skills__tags">
+        <span className="skills__tag" data-level="advanced">Django</span>
+        <span className="skills__tag" data-level="advanced">FastAPI</span>
+        <span className="skills__tag" data-level="intermediate">Laravel</span>
+        <span className="skills__tag" data-level="advanced">MySQL</span>
+        <span className="skills__tag" data-level="intermediate">MongoDB</span>
+        <span className="skills__tag" data-level="intermediate">Qdrant (VectorDB)</span>
+        <span className="skills__tag" data-level="intermediate">Memgraph (GraphDB)</span>
+        <span className="skills__tag" data-level="intermediate">Firebase</span>
+        <span className="skills__tag" data-level="advanced">Neo4j</span>
+        <span className="skills__tag" data-level="intermediate">InfluxDB</span>
+        <span className="skills__tag" data-level="intermediate">DynamoDB</span>
       </div>
     </div>
   )

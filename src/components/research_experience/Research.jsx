@@ -3,7 +3,7 @@ import "./research.css";
 
 const Research = () => {
   return (
-    <section className="qualification section" id="education">
+    <section className="qualification research section" id="research">
       <h2 className="section__title">Research Experience</h2>
       <div className="qualification__container container">
         <div className="qualification__sections">
@@ -36,23 +36,24 @@ const Research = () => {
               </div>
               <div className="qualification__research-item">
                 <h3 className="qualification__title">
-                  BanSpeech: A Multi‐Domain Bangla Speech Recognition Benchmark
-                  Toward Robust Performance in Challenging Conditions
+                  <a
+                    href="https://ieeexplore.ieee.org/document/10453554"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="research__paper-link"
+                  >
+                    BanSpeech: A Multi‐Domain Bangla Speech Recognition Benchmark
+                    Toward Robust Performance in Challenging Conditions
+                  </a>
                 </h3>
                 <span className="qualification__subtitle">
                   Assessed a Bangla ASR model on BanSpeech, a 7.2‐hour
                   benchmark; it struggled with spontaneous speech and high
                   out‐of‐vocabulary rates, highlighting the importance of domain
                   selection.
-                  <a
-                    href="https://ieeexplore.ieee.org/document/10453554"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="readmore__button"
-                  >
-                    &nbsp;&nbsp;Read More
-                    <i className="bx bx-right-arrow-alt"></i>
-                  </a>
+                </span>
+                <span className="research__venue">
+                  Published in <em>IEEE Access</em>, vol. 12, pp. 34527–34538, 2024
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calender" style={{ marginRight: "8px" }}></i>

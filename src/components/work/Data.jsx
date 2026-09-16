@@ -1,11 +1,21 @@
 import revechat from "../../assets/revechat.png"
 import tts from "../../assets/tts.png"
-import Work3 from "../../assets/work3.jpg"
+import Work1 from "../../assets/work1.jpg"
+import Work2 from "../../assets/work2.jpg"
 import stt from "../../assets/stt.png"
-import Work5 from "../../assets/work5.jpg"
+import Work3 from "../../assets/work3.jpg"
+import optiify from "../../assets/optiify.png"
 
 
 export const projectData = [
+  {
+    id: 7,
+    image: optiify,
+    title: "Optiify",
+    category: "company",
+    link: "https://www.optiify.ai/",
+    description: "AI CoPilot for building operations — LangGraph agents, knowledge graphs, and plain-language chat over HVAC, faults, and after-hours access."
+  },
   {
     id: 1,
     image: revechat,
@@ -24,11 +34,11 @@ export const projectData = [
   },
   {
     id: 3,
-    image: Work3,
-    title: "Brand design",
+    image: Work1,
+    title: "SUST Student Management System",
     category: "personal",
-    link: "https://read.bangla.gov.bd/",
-    description: "Creative brand identity and UI design concept."
+    link: "https://github.com/ppaartha",
+    description: "Manages student and faculty data, departments, courses, and assignments, with faculty mark entry. Django, Python, Bootstrap, MySQL."
   },
   {
     id: 4,
@@ -40,19 +50,19 @@ export const projectData = [
   },
   {
     id: 5,
-    image: Work5,
-    title: "Web design",
+    image: Work2,
+    title: "Automatic Attendance System",
     category: "personal",
-    link: "https://read.bangla.gov.bd/",
-    description: "Modern responsive website design example."
+    link: "https://github.com/ppaartha",
+    description: "Face-recognition web app that marks attendance from five enrolled photos per classmate. Python, OpenCV, Streamlit."
   },
   {
     id: 6,
-    image: Work5,
-    title: "Web design",
+    image: Work3,
+    title: "Shoesly — E-commerce Website",
     category: "personal",
-    link: "https://read.bangla.gov.bd/",
-    description: "Portfolio demo showcasing UI/UX creativity."
+    link: "https://github.com/ppaartha",
+    description: "User, supplier, admin, and bank flows for catalog filtering, order confirmation, and transactions. Node.js, React.js, MongoDB, Express.js."
   },
 ];
 

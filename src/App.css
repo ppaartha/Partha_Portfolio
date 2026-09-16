@@ -1,48 +1,51 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3rem;
+  --header-height: 3.25rem;
 
-  /*========== Colors ==========*/
-  /* Professional Academic Portfolio Color Scheme */
-  --title-color: #1a1a1a;
-  --title-color-dark: #0a0a0a;
-  --text-color: #4a5568;
-  --text-color-light: #718096;
-  --body-color: #fafafa;
-  --container-color: rgba(255, 255, 255, 0.95);
-  
-  /* Professional accent colors */
-  --accent-primary: #0ea5e9;
-  --accent-primary-dark: #0284c7;
-  --accent-secondary: #10b981;
-  --accent-tertiary: #6366f1;
-  
-  /* Gradient colors - subtle and professional */
-  --gradient-primary: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
-  --gradient-secondary: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  --gradient-accent: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
-  --gradient-subtle: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
-  
-  /* Background colors */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --bg-tertiary: #f1f5f9;
+  /*========== Colors — ink, ivory, gold, neural teal ==========*/
+  --title-color: #f4efe4;
+  --title-color-dark: #fffaf1;
+  --text-color: #b8b0a4;
+  --text-color-light: #8c8578;
+  --body-color: #07090f;
+  --container-color: #f4efe4;
+
+  --accent-primary: #c9a962;
+  --accent-primary-dark: #a8883f;
+  --accent-secondary: #5eead4;
+  --accent-tertiary: #7dd3fc;
+
+  --gradient-primary: linear-gradient(135deg, #d4b56a 0%, #a8883f 100%);
+  --gradient-secondary: linear-gradient(135deg, #5eead4 0%, #2dd4bf 100%);
+  --gradient-accent: linear-gradient(135deg, #c9a962 0%, #5eead4 100%);
+  --gradient-subtle: linear-gradient(180deg, #0c1018 0%, #07090f 100%);
+
+  --bg-primary: #07090f;
+  --bg-secondary: #0b0f18;
+  --bg-tertiary: #111827;
+  --surface: rgba(14, 18, 30, 0.78);
+  --surface-strong: rgba(18, 23, 38, 0.92);
+  --border: rgba(201, 169, 98, 0.2);
+  --border-soft: rgba(244, 239, 228, 0.08);
+  --glow-gold: rgba(201, 169, 98, 0.28);
+  --glow-teal: rgba(94, 234, 212, 0.18);
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Outfit", sans-serif;
+  --display-font: "Cormorant Garamond", Georgia, serif;
+  --mono-font: "IBM Plex Mono", ui-monospace, monospace;
 
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --big-font-size: 3.5rem;
-  --h1-font-size: 2.25rem;
-  --h2-font-size: 1.5rem;
+  --big-font-size: 3.75rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1.65rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
-  --tiny-font-size: 0.625rem;
+  --tiny-font-size: 0.7rem;
 
   /*========== Font weight ==========*/
   --font-normal: 400;
@@ -50,7 +53,6 @@
   --font-semi-bold: 600;
 
   /*========== Margenes Bottom ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
@@ -66,13 +68,12 @@
   --z-modal: 1000;
 }
 
-/* Responsive typography */
 @media screen and (max-width: 992px) {
   :root {
     --big-font-size: 2.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.35rem;
+    --h3-font-size: 1.05rem;
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
@@ -88,6 +89,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body,
@@ -99,70 +101,73 @@ textarea {
 }
 
 body {
-  background: var(--bg-secondary);
-  background-image: 
-    radial-gradient(circle at 20% 30%, rgba(14, 165, 233, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(16, 185, 129, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.02) 0%, transparent 50%);
+  background: var(--bg-primary);
   color: var(--text-color);
   position: relative;
   min-height: 100vh;
+  letter-spacing: 0.01em;
 }
 
-/* Subtle animated background pattern */
+::selection {
+  background: rgba(201, 169, 98, 0.35);
+  color: var(--title-color);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07090f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a261c;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary-dark);
+}
+
+/* Neural lattice */
 body::before {
-  content: '';
+  content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(14, 165, 233, 0.01) 2px, rgba(14, 165, 233, 0.01) 4px),
-    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(16, 185, 129, 0.01) 2px, rgba(16, 185, 129, 0.01) 4px);
-  background-size: 100px 100px;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(201, 169, 98, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 234, 212, 0.03) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse at center, #000 35%, transparent 80%);
   pointer-events: none;
   z-index: 0;
-  opacity: 0.3;
-  animation: patternMove 20s linear infinite;
+  animation: patternMove 40s linear infinite;
 }
 
 @keyframes patternMove {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(100px, 100px);
-  }
+  0% { background-position: 0 0, 0 0; }
+  100% { background-position: 72px 72px, 72px 72px; }
 }
 
-/* Subtle floating gradient orbs */
+/* Ambient neural orbs */
 body::after {
-  content: '';
+  content: "";
   position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: 
-    radial-gradient(circle at 15% 25%, rgba(14, 165, 233, 0.08) 0%, transparent 25%),
-    radial-gradient(circle at 85% 75%, rgba(16, 185, 129, 0.06) 0%, transparent 25%),
-    radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.04) 0%, transparent 30%);
-  animation: floatOrbs 30s ease-in-out infinite;
+  inset: -40%;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(201, 169, 98, 0.1) 0%, transparent 28%),
+    radial-gradient(circle at 82% 70%, rgba(94, 234, 212, 0.08) 0%, transparent 26%),
+    radial-gradient(circle at 50% 100%, rgba(125, 211, 252, 0.05) 0%, transparent 32%);
+  animation: floatOrbs 36s ease-in-out infinite;
   pointer-events: none;
   z-index: 0;
 }
 
 @keyframes floatOrbs {
-  0%, 100% {
-    transform: translate(0, 0) scale(1);
-  }
-  33% {
-    transform: translate(3%, -3%) scale(1.05);
-  }
-  66% {
-    transform: translate(-3%, 3%) scale(0.95);
-  }
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  40% { transform: translate(2%, -3%) scale(1.04); }
+  70% { transform: translate(-2%, 2%) scale(0.97); }
 }
 
 h1,
@@ -170,6 +175,11 @@ h2,
 h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+}
+
+h1,
+h2 {
+  font-family: var(--display-font);
 }
 
 ul {
@@ -193,22 +203,36 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 6rem 0 2rem;
+  padding: 6.5rem 0 2.5rem;
   position: relative;
 }
 
 .section__title {
+  font-family: var(--display-font);
   font-size: var(--h1-font-size);
   color: var(--title-color);
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
+}
+
+.section__title::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 1px;
+  margin: 0.85rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--accent-primary), var(--accent-secondary), transparent);
 }
 
 .section__subtitle {
   display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: 4rem;
-  color: var(--text-color);
+  font-family: var(--mono-font);
+  font-size: var(--tiny-font-size);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+  margin-top: 0.65rem;
+  color: var(--accent-secondary);
 }
 
 .section__title,
@@ -218,7 +242,7 @@ img {
 
 /*=============== LAYOUT ===============*/
 .container {
-  max-width: 968px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -235,42 +259,58 @@ img {
   gap: 1.5rem;
 }
 
+/* Dark glass card primitive */
+.glass-card {
+  background: var(--surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background: var(--gradient-primary);
-  color: var(--container-color);
-  padding: 1rem 1rem;
-  border-radius: 0.75rem;
+  background: transparent;
+  color: var(--accent-primary);
+  padding: 0.95rem 1.15rem;
+  border-radius: 0;
   font-weight: var(--font-medium);
+  font-family: var(--mono-font);
+  font-size: var(--tiny-font-size);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   width: 200px;
   text-align: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.25);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--accent-primary);
+  box-shadow: 0 0 0 0 var(--glow-gold);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  isolation: isolate;
 }
 
 .button::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
-  transition: left 0.5s;
+  inset: 0;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: -1;
 }
 
 .button:hover::before {
-  left: 100%;
+  transform: scaleX(1);
 }
 
 .button:hover {
+  color: #0a0c12;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.35);
-  background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%);
+  box-shadow: 0 10px 28px var(--glow-gold);
+  border-color: var(--accent-primary);
 }
 
 .button__icon {
@@ -282,8 +322,54 @@ img {
   align-items: center;
 }
 
+/*=============== LEFT TEAL HOVER BAR ===============*/
+.services__role,
+.qualification__data,
+.work__card,
+.about__box,
+.achievement__data,
+.contact__card,
+.testimonial__card,
+.skills__content {
+  position: relative;
+  overflow: hidden;
+}
+
+.services__role::before,
+.qualification__data::before,
+.work__card::before,
+.about__box::before,
+.achievement__data::before,
+.contact__card::before,
+.testimonial__card::before,
+.skills__content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--accent-secondary);
+  box-shadow: 0 0 18px var(--glow-teal);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.services__role:hover::before,
+.qualification__data:hover::before,
+.work__card:hover::before,
+.about__box:hover::before,
+.achievement__data:hover::before,
+.contact__card:hover::before,
+.testimonial__card:hover::before,
+.skills__content:hover::before {
+  transform: scaleY(1);
+}
+
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
 @media screen and (max-width: 992px) {
   .container {
     margin-left: var(--mb-1-5);
@@ -291,7 +377,7 @@ img {
   }
 
   .button {
-    padding: 1rem 1.75rem;
+    padding: 0.9rem 1.25rem;
   }
 
   .button__icon {
@@ -300,14 +386,17 @@ img {
   }
 }
 
-/* For medium devices */
 @media screen and (max-width: 768px) {
   body {
     margin: 0 0 var(--header-height) 0;
   }
 
+  html {
+    scroll-padding-top: 1.5rem;
+  }
+
   .section {
-    padding: 2rem 0 4rem;
+    padding: 2.5rem 0 4.5rem;
   }
 
   .section__subtitle {
@@ -315,10 +404,6 @@ img {
   }
 }
 
-@media screen and (max-width: 576px) {
-}
-
-/* For small devices */
 @media screen and (max-width: 350px) {
   :root {
     --big-font-size: 2.25rem;

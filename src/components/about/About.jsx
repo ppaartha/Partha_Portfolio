@@ -16,13 +16,21 @@ const About = () => {
           <p className="about__description">
             I am Partha Ghosh. I have completed my bachelor's degree in CSE from
             Shahjalal University of Science and Technology, Bangladesh.
-            Recently, I have been working at REVE Systems (Dhaka, Bangladesh) as
-            a Machine Learning Engineer. I specialize in developing and
-            fine-tuning advanced machine learning models, particularly in speech
-            recognition, natural language processing and RAG-based AI chatbot
-            systems using GraphRag, LightRag, Multi Modal Rag and Agentic Rag.
-            With experience working on models like Wav2Vec 2.0, Whisper, BERT,
-            RAG architecture, LLaMA and LangChain.
+            I currently work at Conneqted Agents as an AI Engineer on{" "}
+            <a
+              href="https://www.optiify.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__link"
+            >
+              Optiify
+            </a>, building LangGraph agents, MCP tools, Neo4j equipment graphs, and
+            RAG over building documents. Previously I worked at REVE Systems
+            (Dhaka, Bangladesh) as a Machine Learning Engineer, specializing in
+            speech recognition, natural language processing, and RAG-based AI
+            chatbot systems using GraphRAG, LightRAG, multimodal RAG, and
+            agentic RAG, with models like Wav2Vec 2.0, Whisper, BERT, LLaMA, and
+            LangChain.
           </p>
           <Info />
           
