@@ -23,14 +23,23 @@
     -webkit-backdrop-filter: blur(10px);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .work__item:hover {
+    color: var(--title-color);
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+.work__item.active__work,
+.work__item.active__work:hover {
     background: var(--accent-primary);
     color: #0a0c12;
-    transform: translateY(-2px);
     box-shadow: 0 8px 22px var(--glow-gold);
     border-color: var(--accent-primary);
+    transform: none;
 }
 
 .work__scroller-wrap {
@@ -194,13 +203,6 @@
 
 .work__button:hover .work__button-icon {
     transform: translateX(0.25rem);
-}
-
-.active__work {
-    background: var(--accent-primary);
-    color: #0a0c12;
-    box-shadow: 0 8px 22px var(--glow-gold);
-    border-color: var(--accent-primary);
 }
 
 @media screen and (max-width: 992px) {

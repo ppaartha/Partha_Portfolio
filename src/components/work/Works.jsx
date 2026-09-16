@@ -79,8 +79,8 @@ const Works = () => {
     el.scrollBy({ left: direction * amount, behavior: "smooth" });
   };
 
-  const handleClick = (e, index) => {
-    setItem({ name: e.target.textContent.toLowerCase() });
+  const handleClick = (name, index) => {
+    setItem({ name: name.toLowerCase() });
     setActive(index);
   };
 
@@ -88,16 +88,17 @@ const Works = () => {
     <div>
       <div className="work__filters">
         {projectNav.map((navItem, index) => {
+          const isActive = active === index;
           return (
-            <span
-              onClick={(e) => {
-                handleClick(e, index);
-              }}
-              className={`${active === index ? "active__work" : ""} work__item`}
+            <button
+              type="button"
+              onClick={() => handleClick(navItem.name, index)}
+              className={`work__item${isActive ? " active__work" : ""}`}
               key={index}
+              aria-pressed={isActive}
             >
               {navItem.name}
-            </span>
+            </button>
           );
         })}
       </div>
