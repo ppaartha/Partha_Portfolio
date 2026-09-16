@@ -42,22 +42,31 @@ const Works = () => {
     const handleWheel = (event) => {
       if (event.ctrlKey) return;
 
-      const scale = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? window.innerHeight : 1;
-      const deltaY = event.deltaY * scale;
-      const deltaX = event.deltaX * scale;
-      const mostlyVertical = Math.abs(deltaY) >= Math.abs(deltaX);
+      const absX = Math.abs(event.deltaX);
+      const absY = Math.abs(event.deltaY);
 
-      if (mostlyVertical && !event.shiftKey) {
+      // Shift + wheel → horizontal carousel (mouse users)
+      if (event.shiftKey) {
+        if (el.scrollWidth <= el.clientWidth) return;
         event.preventDefault();
-        window.scrollBy(0, deltaY);
+        el.scrollLeft += event.deltaY;
         return;
       }
 
-      if (el.scrollWidth <= el.clientWidth) return;
-      if (event.shiftKey && mostlyVertical) {
-        el.scrollLeft += deltaY;
-        event.preventDefault();
+      // Trackpad / touchpad horizontal swipe — let native overflow-x scroll
+      if (absX > absY) {
+        return;
       }
+
+      // Pure vertical wheel over the carousel — scroll the page, don't trap
+      if (absY === 0) return;
+      event.preventDefault();
+      const root = document.scrollingElement || document.documentElement;
+      const html = document.documentElement;
+      const previousBehavior = html.style.scrollBehavior;
+      html.style.scrollBehavior = "auto";
+      root.scrollTop += event.deltaY;
+      html.style.scrollBehavior = previousBehavior;
     };
 
     el.addEventListener("scroll", updateScrollState);

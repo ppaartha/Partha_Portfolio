@@ -14,7 +14,7 @@ export const projectData = [
     title: "Optiify",
     category: "company",
     link: "https://www.optiify.ai/",
-    description: "AI CoPilot for building operations — LangGraph agents, knowledge graphs, and plain-language chat over HVAC, faults, and after-hours access."
+    description: "AI CoPilot for building operations — LangGraph agents, knowledge graphs and plain-language chat over HVAC, faults and after-hours access."
   },
   {
     id: 1,
@@ -38,7 +38,7 @@ export const projectData = [
     title: "SUST Student Management System",
     category: "personal",
     link: "https://github.com/ppaartha",
-    description: "Manages student and faculty data, departments, courses, and assignments, with faculty mark entry. Django, Python, Bootstrap, MySQL."
+    description: "Manages student and faculty data, departments, courses and assignments, with faculty mark entry. Django, Python, Bootstrap, MySQL."
   },
   {
     id: 4,
@@ -62,7 +62,7 @@ export const projectData = [
     title: "Shoesly — E-commerce Website",
     category: "personal",
     link: "https://github.com/ppaartha",
-    description: "User, supplier, admin, and bank flows for catalog filtering, order confirmation, and transactions. Node.js, React.js, MongoDB, Express.js."
+    description: "User, supplier, admin and bank flows for catalog filtering, order confirmation and transactions. Node.js, React.js, MongoDB, Express.js."
   },
 ];
 

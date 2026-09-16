@@ -21,12 +21,12 @@ const About = () => {
               className="about__link"
             >
               Optiify
-            </a>, building LangGraph agents, MCP tools, Neo4j equipment graphs, and
+            </a>, building LangGraph agents, MCP tools, Neo4j equipment graphs and
             RAG over building documents. Previously I worked at REVE Systems
             (Dhaka, Bangladesh) as a Machine Learning Engineer, specializing in
-            speech recognition, natural language processing, and RAG-based AI
-            chatbot systems using GraphRAG, LightRAG, multimodal RAG, and
-            agentic RAG, with models like Wav2Vec 2.0, Whisper, BERT, LLaMA, and
+            speech recognition, natural language processing and RAG-based AI
+            chatbot systems using GraphRAG, LightRAG, multimodal RAG and
+            agentic RAG, with models like Wav2Vec 2.0, Whisper, BERT, LLaMA and
             LangChain.
           </p>
           <p className="about__description">

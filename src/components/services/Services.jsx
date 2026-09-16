@@ -48,7 +48,7 @@ const Services = () => {
                   Optiify
                 </a>{" "}
                 chat so building
-                users can book after-hours access, inspect HVAC faults, and ask
+                users can book after-hours access, inspect HVAC faults and ask
                 equipment questions in one conversation.
               </p>
             </li>
@@ -56,7 +56,7 @@ const Services = () => {
               <i className="uil uil-check-circle services__item-icon"></i>
               <p className="services__info">
                 Designed tool-calling workflows (booking, FDD, work orders,
-                building context) with FastAPI, DynamoDB, and InfluxDB instead
+                building context) with FastAPI, DynamoDB and InfluxDB instead
                 of stuffing raw building data into the prompt.
               </p>
             </li>
@@ -119,7 +119,7 @@ const Services = () => {
                 >
                   REVE Chat
                 </a>{" "}
-                using GraphRAG, LightRAG, multimodal RAG, agentic RAG, and
+                using GraphRAG, LightRAG, multimodal RAG, agentic RAG and
                 LangChain, with hybrid search (BM25 + dense) for stronger
                 responses.
               </p>
@@ -173,7 +173,7 @@ const Services = () => {
               <i className="uil uil-check-circle services__item-icon"></i>
               <p className="services__info">
                 Implemented face liveness detection for the NTMC biometric
-                authentication project using OpenCV, CNNs, and MediaPipe
+                authentication project using OpenCV, CNNs and MediaPipe
                 (anti-spoofing).
               </p>
             </li>
@@ -187,7 +187,7 @@ const Services = () => {
             <li className="services__item">
               <i className="uil uil-check-circle services__item-icon"></i>
               <p className="services__info">
-                Developed a chatbot with BERT and Bi-LSTM, and improved the REVE
+                Developed a chatbot with BERT and Bi-LSTM and improved the REVE
                 Chat dashboard frontend (React.js).
               </p>
             </li>
