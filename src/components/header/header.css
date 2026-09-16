@@ -111,7 +111,7 @@
 
     .nav__menu {
         position: fixed;
-        bottom: -100%;
+        bottom: 0;
         left: 0;
         width: 100%;
         background: rgba(10, 13, 22, 0.96);
@@ -119,11 +119,17 @@
         box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.45);
         border-radius: 1.25rem 1.25rem 0 0;
         border: 1px solid var(--border);
-        transition: .3s;
+        transition: transform 0.3s ease, visibility 0.3s ease;
+        transform: translateY(100%);
+        visibility: hidden;
+        pointer-events: none;
+        z-index: var(--z-fixed);
     }
 
-    .show-menu {
-        bottom: 0;
+    .nav__menu.show-menu {
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
     }
 
     .nav__list {

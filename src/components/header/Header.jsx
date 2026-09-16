@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./header.css";
 
 const Header = () => {
   const [Toggle, showMenu] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const menuRef = useRef(null);
+  const toggleRef = useRef(null);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -29,9 +31,25 @@ const Header = () => {
     return () => window.removeEventListener("scroll", scrollActive);
   }, []);
 
+  useEffect(() => {
+    if (!Toggle) return;
+
+    const handlePointerDown = (event) => {
+      const clickedMenu = menuRef.current?.contains(event.target);
+      const clickedToggle = toggleRef.current?.contains(event.target);
+
+      if (!clickedMenu && !clickedToggle) {
+        showMenu(false);
+      }
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => document.removeEventListener("pointerdown", handlePointerDown);
+  }, [Toggle]);
+
   const handleLinkClick = (sectionId) => {
     setActiveSection(sectionId);
-    showMenu(false); // Close mobile menu on link click
+    showMenu(false);
   };
 
   return (
@@ -41,7 +59,10 @@ const Header = () => {
         <a href="#home" className="nav__logo" onClick={() => handleLinkClick("home")}>
           Partha
         </a>
-        <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
+        <div
+          ref={menuRef}
+          className={Toggle ? "nav__menu show-menu" : "nav__menu"}
+        >
           <ul className="nav__list grid">
             <li className="nav__item">
               <a 
@@ -144,10 +165,16 @@ const Header = () => {
           </ul>
           <i
             className="uil uil-times nav__close"
-            onClick={() => showMenu(!Toggle)}
+            onClick={() => showMenu(false)}
           ></i>
         </div>
-        <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
+        <div
+          ref={toggleRef}
+          className="nav__toggle"
+          onClick={() => showMenu(!Toggle)}
+          aria-expanded={Toggle}
+          aria-label="Toggle menu"
+        >
           <i className="uil uil-apps"></i>
         </div>
       </nav>
