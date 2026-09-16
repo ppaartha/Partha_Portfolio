@@ -386,11 +386,17 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   body {
-    margin: 0 0 var(--header-height) 0;
+    margin: 0 0 calc(var(--header-height) + env(safe-area-inset-bottom, 0px)) 0;
   }
 
+  html {
+    scroll-padding-bottom: calc(var(--header-height) + env(safe-area-inset-bottom, 0px) + 1rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
   html {
     scroll-padding-top: 1.5rem;
   }

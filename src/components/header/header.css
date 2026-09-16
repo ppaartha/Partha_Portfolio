@@ -99,10 +99,19 @@
 
 @media screen and (max-width: 992px) {
     .header {
-        top: initial;
+        top: auto;
+        right: 0;
         bottom: 0;
+        left: 0;
+        width: 100%;
         border-bottom: none;
         border-top: 1px solid var(--border);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+        /* Keep the bar pinned while mobile browser chrome shows/hides */
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
 
     .nav {
@@ -115,19 +124,21 @@
         left: 0;
         width: 100%;
         background: rgba(10, 13, 22, 0.96);
-        padding: 2rem 1.5rem 4rem;
+        padding: 2rem 1.5rem calc(4rem + env(safe-area-inset-bottom, 0px));
         box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.45);
         border-radius: 1.25rem 1.25rem 0 0;
         border: 1px solid var(--border);
         transition: transform 0.3s ease, visibility 0.3s ease;
-        transform: translateY(100%);
+        transform: translate3d(0, 100%, 0);
+        -webkit-transform: translate3d(0, 100%, 0);
         visibility: hidden;
         pointer-events: none;
-        z-index: var(--z-fixed);
+        z-index: calc(var(--z-fixed) + 1);
     }
 
     .nav__menu.show-menu {
-        transform: translateY(0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
         visibility: visible;
         pointer-events: auto;
     }
