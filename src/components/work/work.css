@@ -176,7 +176,17 @@
     font-family: var(--display-font);
     font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: var(--mb-0-5);
+    margin-bottom: 0.2rem;
+}
+
+.work__period {
+    display: block;
+    font-family: var(--mono-font);
+    font-size: var(--tiny-font-size);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-secondary);
+    margin-bottom: 0.55rem;
 }
 
 .work__description {
@@ -265,7 +275,11 @@
 
     .work__title {
         font-size: 1.15rem;
-        margin-bottom: 0.35rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .work__period {
+        margin-bottom: 0.4rem;
     }
 
     .work__description {
@@ -295,10 +309,6 @@
 
     .work__description {
         font-size: 0.78rem;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
     }
 }
 

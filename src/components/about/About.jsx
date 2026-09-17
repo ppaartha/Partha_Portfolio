@@ -21,13 +21,41 @@ const About = () => {
               className="about__link"
             >
               Optiify
-            </a>, building LangGraph agents, MCP tools, Neo4j equipment graphs and
-            RAG over building documents. Previously I worked at REVE Systems
-            (Dhaka, Bangladesh) as a Machine Learning Engineer, specializing in
-            speech recognition, natural language processing and RAG-based AI
-            chatbot systems using GraphRAG, LightRAG, multimodal RAG and
-            agentic RAG, with models like Wav2Vec 2.0, Whisper, BERT, LLaMA and
-            LangChain.
+            </a>{" "}
+            (LangGraph agents, MCP tools, Neo4j equipment graphs, and RAG) and
+            on{" "}
+            <a
+              href="https://www.quantiify.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__link"
+            >
+              Quantiify
+            </a>{" "}
+            (YOLOv8 + SAHI for drawing symbol count and legend detection).
+            Previously I worked at REVE Systems (Dhaka, Bangladesh) as a Machine
+            Learning Engineer. I built a RAG-based chatbot for{" "}
+            <a
+              href="https://www.revechat.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__link"
+            >
+              REVE Chat
+            </a>{" "}
+            using GraphRAG, LightRAG, multimodal RAG, agentic RAG, BERT, LLaMA
+            and LangChain. For speech I used wav2vec 2.0 and Whisper as STT
+            models and VITS as the TTS model, plus Temporal Fusion Transformer
+            forecasts and a CatVTON virtual try-on for{" "}
+            <a
+              href="https://www.lerevecraze.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__link"
+            >
+              Le Reve
+            </a>
+            .
           </p>
           <p className="about__description">
             My research focuses on Bangla speech recognition. I contributed to

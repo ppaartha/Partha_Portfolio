@@ -10,7 +10,7 @@ const Testimonials = () => {
   return (
     <section className="testimonial section container" id="reference">
       <h2 className="section__title">Reference</h2>
-      <span className="section__subtitle"></span>
+      <span className="section__subtitle">Academic Reference</span>
       <Swiper
         className="testimonial__container"
         loop={Data.length > 1}

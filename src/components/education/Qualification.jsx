@@ -8,6 +8,7 @@ const Qualification = () => {
   return (
     <section className="qualification section" id="education">
       <h2 className="section__title">Educational Qualification</h2>
+      <span className="section__subtitle">My Academic Path</span>
       <div className="qualification__container container">
 
         <div className="qualification__sections">
@@ -27,7 +28,9 @@ const Qualification = () => {
                     BSc in Computer Science and Engineering
                   </span>
                   <br />
-                  <span className="qualification__subtitle">CGPA: 3.35</span>
+                  <span className="qualification__subtitle">
+                    CGPA: 3.35 out of 4.00 (Last 4 semesters: 3.61)
+                  </span>
                   <div className="qualification__calender">
                     <i className="uil uil-calender" style={{ marginRight: "8px" }}></i>
                     2018-2023
@@ -50,7 +53,7 @@ const Qualification = () => {
                     Higher Secondary Certificate (HSC)
                   </span>
                   <br />
-                  <span className="qualification__subtitle">GPA: 5.00</span>
+                  <span className="qualification__subtitle">GPA: 5.00 out of 5.00</span>
                   <div className="qualification__calender">
                     <i className="uil uil-calender" style={{ marginRight: "8px" }}></i>
                     2015-2017
@@ -73,7 +76,7 @@ const Qualification = () => {
                     Secondary School Certificate (SSC)
                   </span>
                   <br />
-                  <span className="qualification__subtitle">GPA: 5.00</span>
+                  <span className="qualification__subtitle">GPA: 5.00 out of 5.00</span>
                   <div className="qualification__calender">
                     <i className="uil uil-calender" style={{ marginRight: "8px" }}></i>
                     2005-2015

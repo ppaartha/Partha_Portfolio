@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <section className="services section" id="experience">
       <h2 className="section__title">Experience</h2>
-      <span className="section__subtitle">My Technical Level</span>
+      <span className="section__subtitle">My Professional Journey</span>
       <div className="services__container container">
         <article className="services__role">
           <div className="services__role-header">
@@ -87,9 +87,17 @@ const Services = () => {
             <li className="services__item">
               <i className="uil uil-check-circle services__item-icon"></i>
               <p className="services__info">
-                Containerized Neo4j with the API stack and auto-loaded the
-                equipment graph on server startup so the agent has a ready graph
-                in Docker.
+                Trained YOLOv8 with SAHI for{" "}
+                <a
+                  href="https://www.quantiify.ai/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="services__link"
+                >
+                  Quantiify
+                </a>{" "}
+                to detect legends and count symbols on large construction
+                drawings without missing small objects.
               </p>
             </li>
           </ul>
@@ -180,14 +188,41 @@ const Services = () => {
             <li className="services__item">
               <i className="uil uil-check-circle services__item-icon"></i>
               <p className="services__info">
-                Built time-series forecasting pipelines for production quantity
-                and sales.
+                Developed a Temporal Fusion Transformer (TFT) pipeline for{" "}
+                <a
+                  href="https://www.lerevecraze.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="services__link"
+                >
+                  Le Reve
+                </a>{" "}
+                to forecast production quantity and sales over multiple
+                horizons, with attention-based interpretability so planners
+                could see which product, season, and store signals drove each
+                prediction.
               </p>
             </li>
             <li className="services__item">
               <i className="uil uil-check-circle services__item-icon"></i>
               <p className="services__info">
-                Developed a chatbot with BERT and Bi-LSTM and improved the REVE
+                Built a virtual try-on for{" "}
+                <a
+                  href="https://www.lerevecraze.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="services__link"
+                >
+                  Le Reve
+                </a>{" "}
+                with CatVTON, a lightweight diffusion model, so customers could
+                see garments on a person image without a heavy try-on stack.
+              </p>
+            </li>
+            <li className="services__item">
+              <i className="uil uil-check-circle services__item-icon"></i>
+              <p className="services__info">
+                Developed a chatbot with BERT and Bi-LSTM, and improved the REVE
                 Chat dashboard frontend (React.js).
               </p>
             </li>

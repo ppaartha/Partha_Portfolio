@@ -13,7 +13,8 @@ const WorkItems = ({ item }) => {
       </a>
 
       <h3 className="work__title">{item.title}</h3>
-      <p className="work__description">{item.description}</p>   {/* NEW LINE */}
+      {item.period && <span className="work__period">{item.period}</span>}
+      <p className="work__description">{item.description}</p>
 
       <a href={item.link} target="_blank" rel="noopener noreferrer" className="work__button">
         {item.category === "company" ? "Demo" : "Github"}{" "}

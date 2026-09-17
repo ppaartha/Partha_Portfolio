@@ -6,7 +6,7 @@ const Achievement = () => {
   return (
     <section className="achievement section" id="achievement">
         <h2 className="section__title">Achievements</h2>
-        <span className="section__subtitle">My Achievements</span>
+        <span className="section__subtitle">Awards & Recognition</span>
         <div className="achievement__container container grid">
           
           <div className="achievement__data">

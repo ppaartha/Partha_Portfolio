@@ -5,6 +5,7 @@ const Research = () => {
   return (
     <section className="qualification research section" id="research">
       <h2 className="section__title">Research Experience</h2>
+      <span className="section__subtitle">Papers & Publications</span>
       <div className="qualification__container container">
         <div className="qualification__sections">
   
