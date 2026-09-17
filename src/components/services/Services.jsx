@@ -160,7 +160,8 @@ const Services = () => {
                 >
                   উচ্চারণ
                 </a>
-                ).
+                ) with custom G2P phonemization for accurate pronunciation and
+                natural prosody.
               </p>
             </li>
             <li className="services__item">
@@ -244,9 +245,9 @@ const Services = () => {
             <li className="services__item">
               <i className="uil uil-check-circle services__item-icon"></i>
               <p className="services__info">
-                Developed a 2D object-detection game and a typing game (players
-                type sentences against a time limit) in Unity for Android and
-                iOS.
+                Developed a 2D object-detection game and a Japanese typing game
+                (players type sentences against a time limit) in Unity for
+                Android and iOS.
               </p>
             </li>
             <li className="services__item">

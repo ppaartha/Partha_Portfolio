@@ -31,7 +31,7 @@ const Data = () => {
             ></path>
           </svg>
         </a>
-        <a download="" href={CV} className="button button--flex">
+        <a download="CV_Partha.pdf" href={CV} className="button button--flex">
           Download CV
           <svg
             className="button__icon"
