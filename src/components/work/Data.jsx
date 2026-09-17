@@ -9,6 +9,7 @@ import quantiify from "../../assets/quantiify.png"
 import lereve from "../../assets/lereve.png"
 import foodBook from "../../assets/food-book.jpg"
 import muktokathan from "../../assets/muktokathan.jpg"
+import storeFrontMcp from "../../assets/store_front_mcp.jpeg"
 
 
 export const projectData = [
@@ -59,6 +60,15 @@ export const projectData = [
     category: "company",
     link: "https://voice.bangla.gov.bd/",
     description: "Real-time Bangla speech-to-text. Fine-tuned wav2vec 2.0 and Whisper with PEFT-LoRA for কথা, then evaluated on multiple test sets — including augmented data — to find model weaknesses."
+  },
+  {
+    id: 12,
+    image: storeFrontMcp,
+    title: "OrderDesk MCP — Store Front",
+    category: "personal",
+    period: "Sep 2026",
+    link: "https://github.com/ppaartha/Store_Front_MCP",
+    description: "Full-stack MCP customer and order management platform where AI agents use MCP tools to search customers, place orders, and read database summaries. Shared a layered backend across FastMCP, FastAPI, Streamlit, and a React UI with OpenAI tool calling. Python, FastMCP, FastAPI, PostgreSQL, SQLAlchemy, Pydantic, OpenAI, Streamlit, React, Docker."
   },
   {
     id: 3,

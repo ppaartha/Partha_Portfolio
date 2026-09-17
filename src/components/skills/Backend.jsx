@@ -9,6 +9,7 @@ const Backend = () => {
         <span className="skills__tag" data-level="advanced">FastAPI</span>
         <span className="skills__tag" data-level="intermediate">Laravel</span>
         <span className="skills__tag" data-level="advanced">MySQL</span>
+        <span className="skills__tag" data-level="advanced">PostgreSQL</span>
         <span className="skills__tag" data-level="intermediate">MongoDB</span>
         <span className="skills__tag" data-level="intermediate">Qdrant (VectorDB)</span>
         <span className="skills__tag" data-level="intermediate">Memgraph (GraphDB)</span>
