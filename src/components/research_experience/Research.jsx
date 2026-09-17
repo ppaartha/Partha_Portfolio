@@ -20,7 +20,7 @@ const Research = () => {
                   Improved Speech Recognition in Bangladeshi Bangla
                 </h3>
                 <span className="qualification__subtitle">
-                  We created a 200‐hour Bangladeshi Bangla spontaneous speech
+                  We created a 175‐hour Bangladeshi Bangla spontaneous speech
                   corpus and fine‐tuned the multilingual wav2vec 2.0 model,
                   comparing it with a reading corpus (SUBAK.KO) to enhance ASR
                   performance.

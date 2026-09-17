@@ -31,7 +31,7 @@ const Services = () => {
                 </a>
               </h3>
               <p className="services__role-title">AI Engineer</p>
-              <span className="services__role-dates">Dec 2025 – Present · Remote</span>
+              <span className="services__role-dates">Dec 2025 – Present</span>
             </div>
           </div>
           <ul className="services__list">

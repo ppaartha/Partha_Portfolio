@@ -59,7 +59,7 @@ const About = () => {
           </p>
           <p className="about__description">
             My research focuses on Bangla speech recognition. I contributed to
-            developing a 200-hour Bangladeshi Bangla spontaneous speech corpus
+            developing a 175-hour Bangladeshi Bangla spontaneous speech corpus
             and fine-tuning multilingual wav2vec 2.0, comparing it with the
             SUBAK.KO reading corpus to improve ASR performance. I also worked
             on{" "}
