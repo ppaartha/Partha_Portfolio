@@ -14,7 +14,12 @@ const Testimonials = () => {
       <Swiper
         className="testimonial__container"
         loop={Data.length > 1}
-        grabCursor={true}
+        grabCursor={Data.length > 1}
+        simulateTouch={Data.length > 1}
+        allowTouchMove={Data.length > 1}
+        touchStartPreventDefault={false}
+        noSwiping={true}
+        noSwipingClass="swiper-no-swiping"
         spaceBetween={10}
         pagination={{
           clickable: true,
@@ -33,7 +38,7 @@ const Testimonials = () => {
       >
         {Data.map(({ id, image, title, description, link }) => {
           return (
-            <SwiperSlide className="testimonial__card" key={id}>
+            <SwiperSlide className="testimonial__card swiper-no-swiping" key={id}>
               {link ? (
                 <a href={link} target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}}>
                   <img src={image} alt="" className="testimonial__img" />
@@ -41,7 +46,7 @@ const Testimonials = () => {
               ) : (
                 <img src={image} alt="" className="testimonial__img" />
               )}
-              <h3 className="testimonial__name">
+              <h3 className="testimonial__name swiper-no-swiping">
                 {link ? (
                   <a href={link} target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>
                     {title}
@@ -50,11 +55,32 @@ const Testimonials = () => {
                   title
                 )}
               </h3>
-              <p className="testimonial__description">
-                {description.split("\n").map((line, index) => (
-                  <p key={index}>{line}</p>
-                ))}
-              </p>
+              <div className="testimonial__description swiper-no-swiping">
+                {description.split("\n").map((rawLine, index) => {
+                  const line = rawLine.trim();
+                  if (!line) return null;
+                  if (line.toLowerCase().startsWith("email:")) {
+                    const email = line.replace(/^email:\s*/i, "").trim();
+                    return (
+                      <p key={index} className="testimonial__description-line">
+                        Email:{" "}
+                        <a
+                          href={`mailto:${email}`}
+                          className="testimonial__email-link"
+                          title={`Send email to ${email}`}
+                        >
+                          {email}
+                        </a>
+                      </p>
+                    );
+                  }
+                  return (
+                    <p key={index} className="testimonial__description-line">
+                      {line}
+                    </p>
+                  );
+                })}
+              </div>
             </SwiperSlide>
           );
         })}
