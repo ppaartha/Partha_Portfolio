@@ -330,7 +330,8 @@ img {
 .achievement__data,
 .contact__card,
 .testimonial__card,
-.skills__content {
+.skills__content,
+.score__box {
   position: relative;
   overflow: hidden;
 }
@@ -342,7 +343,8 @@ img {
 .achievement__data::before,
 .contact__card::before,
 .testimonial__card::before,
-.skills__content::before {
+.skills__content::before,
+.score__box::before {
   content: "";
   position: absolute;
   left: 0;
@@ -365,7 +367,8 @@ img {
 .achievement__data:hover::before,
 .contact__card:hover::before,
 .testimonial__card:hover::before,
-.skills__content:hover::before {
+.skills__content:hover::before,
+.score__box:hover::before {
   transform: scaleY(1);
 }
 

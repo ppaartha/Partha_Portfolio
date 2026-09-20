@@ -22,22 +22,6 @@ export const projectData = [
     description: "AI CoPilot for building operations. LangGraph agents, a Neo4j equipment graph and RAG over site docs let teams book after-hours access, inspect HVAC faults and ask equipment questions in plain language."
   },
   {
-    id: 8,
-    image: quantiify,
-    title: "Quantiify",
-    category: "company",
-    link: "https://www.quantiify.ai/",
-    description: "AI takeoff from CAD/PDF drawings. YOLOv8 with SAHI detects legends and counts electrical, plumbing and civil symbols on large construction plans without missing small objects."
-  },
-  {
-    id: 9,
-    image: lereve,
-    title: "Le Reve Virtual Try-On",
-    category: "company",
-    link: "https://www.lerevecraze.com/",
-    description: "CatVTON virtual try-on so shoppers can see garments on a person image, plus a Temporal Fusion Transformer pipeline that forecasts production quantity and sales with attention-based interpretability."
-  },
-  {
     id: 1,
     image: revechat,
     title: "REVE CHAT",
@@ -46,12 +30,12 @@ export const projectData = [
     description: "Omni-channel customer communication platform. Built GraphRAG, LightRAG, multimodal and agentic RAG with LangChain and hybrid BM25 + dense search, and improved the React dashboard."
   },
   {
-    id: 2,
-    image: tts,
-    title: "উচ্চারণ (Bangla TTS)",
+    id: 8,
+    image: quantiify,
+    title: "Quantiify",
     category: "company",
-    link: "https://read.bangla.gov.bd/",
-    description: "Bangla text-to-speech for reading content aloud. Fine-tuned a VITS model so উচ্চারণ can synthesize natural Bengali speech from text."
+    link: "https://www.quantiify.ai/",
+    description: "AI takeoff from CAD/PDF drawings. YOLOv8 with SAHI detects legends and counts electrical, plumbing and civil symbols on large construction plans without missing small objects."
   },
   {
     id: 4,
@@ -62,13 +46,20 @@ export const projectData = [
     description: "Real-time Bangla speech-to-text. Fine-tuned wav2vec 2.0 and Whisper with PEFT-LoRA for কথা, then evaluated on multiple test sets — including augmented data — to find model weaknesses."
   },
   {
-    id: 12,
-    image: storeFrontMcp,
-    title: "OrderDesk MCP — Store Front",
-    category: "personal",
-    period: "Sep 2026",
-    link: "https://github.com/ppaartha/Store_Front_MCP",
-    description: "Full-stack MCP customer and order management platform where AI agents use MCP tools to search customers, place orders, and read database summaries. Shared a layered backend across FastMCP, FastAPI, Streamlit, and a React UI with OpenAI tool calling. Python, FastMCP, FastAPI, PostgreSQL, SQLAlchemy, Pydantic, OpenAI, Streamlit, React, Docker."
+    id: 2,
+    image: tts,
+    title: "উচ্চারণ (Bangla TTS)",
+    category: "company",
+    link: "https://read.bangla.gov.bd/",
+    description: "Bangla text-to-speech for reading content aloud. Fine-tuned a VITS model so উচ্চারণ can synthesize natural Bengali speech from text."
+  },
+  {
+    id: 9,
+    image: lereve,
+    title: "Le Reve Virtual Try-On",
+    category: "company",
+    link: "https://www.lerevecraze.com/",
+    description: "CatVTON virtual try-on so shoppers can see garments on a person image, plus a Temporal Fusion Transformer pipeline that forecasts production quantity and sales with attention-based interpretability."
   },
   {
     id: 3,
@@ -78,6 +69,15 @@ export const projectData = [
     period: "Nov 2021 – Dec 2021",
     link: "https://github.com/ppaartha/SUST_Student_Management_System",
     description: "Web app for student, faculty and results. Admin can add, update and delete students and faculty, create departments and courses, and assign faculty to the right courses. Faculty enter marks for registered students; students view their results. Django, Python, HTML, CSS, Bootstrap."
+  },
+  {
+    id: 12,
+    image: storeFrontMcp,
+    title: "OrderDesk MCP — Store Front",
+    category: "personal",
+    period: "Sep 2026",
+    link: "https://github.com/ppaartha/Store_Front_MCP",
+    description: "Full-stack MCP customer and order management platform where AI agents use MCP tools to search customers, place orders, and read database summaries. Shared a layered backend across FastMCP, FastAPI, Streamlit, and a React UI with OpenAI tool calling. Python, FastMCP, FastAPI, PostgreSQL, SQLAlchemy, Pydantic, OpenAI, Streamlit, React, Docker."
   },
   {
     id: 5,

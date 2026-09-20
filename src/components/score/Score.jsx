@@ -5,9 +5,9 @@ import "./score.css";
 const Score = () => {
   return (
     <section className="score section" id="score">
-      <h2 className="section__title">Scores</h2>
-      <span className="section__subtitle">All Scores</span>
-      <div className="score__container">
+      <h2 className="section__title">Language Proficiency</h2>
+      <span className="section__subtitle">IELTS Academic Official Band Score</span>
+      <div className="score__container container">
         <ScoreChart />
       </div>
     </section>
