@@ -28,11 +28,11 @@ const Contact = () => {
   };
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Get in Touch</h2>
-      <span className="section__subtitle">Contact me</span>
+      <h2 className="section__title">Contact</h2>
+      <span className="section__subtitle">Get in touch for research inquiries and opportunities</span>
       <div className="contact__container container grid">
         <div className="contact__content">
-          <h3 className="contact__title">Talk to me</h3>
+          <h3 className="contact__title">Direct Contact</h3>
           <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon"></i>
@@ -72,7 +72,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact__content">
-          <h3 className="contact__title">Write me your project</h3>
+          <h3 className="contact__title">Send a Message</h3>
           <form className="contact__form" ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
               <label className="contact__form-tag">Full Name</label>

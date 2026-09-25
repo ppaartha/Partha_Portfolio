@@ -15,7 +15,7 @@ const Services = () => {
             <a href="https://conneqtedagents.ai/" target="_blank" rel="noopener noreferrer">
               <img
                 src={conneqted}
-                alt="Conneqted Agents"
+                alt="ConneqtedAgents"
                 className="company__img company__img--dark"
               />
             </a>
@@ -27,7 +27,7 @@ const Services = () => {
                   rel="noopener noreferrer"
                   className="services__link"
                 >
-                  Conneqted Agents
+                  ConneqtedAgents
                 </a>
               </h3>
               <p className="services__role-title">AI Engineer</p>
@@ -38,7 +38,7 @@ const Services = () => {
             <li className="services__item">
               <i className="uil uil-check-circle services__item-icon"></i>
               <p className="services__info">
-                Built an in-process LangGraph agent for{" "}
+                Built a multi-agent system using LangGraph for{" "}
                 <a
                   href="https://www.optiify.ai/"
                   target="_blank"
@@ -47,9 +47,10 @@ const Services = () => {
                 >
                   Optiify
                 </a>{" "}
-                chat so building
-                users can book after-hours access, inspect HVAC faults and ask
-                equipment questions in one conversation.
+                copilot so building managers can automate after-hours HVAC
+                governance, enabling plain-language tenant self-scheduling,
+                automated usage logging and cost-leak prevention alongside
+                real-time fault inspection of HVAC systems.
               </p>
             </li>
             <li className="services__item">
@@ -63,18 +64,24 @@ const Services = () => {
             <li className="services__item">
               <i className="uil uil-check-circle services__item-icon"></i>
               <p className="services__info">
-                Implemented an MCP (Model Context Protocol) agent for live
-                point-condition time series: catalog lookup in DynamoDB,
-                per-point Influx queries and prompt-led date windows.
+                Built an automated evaluation pipeline with test cases to
+                benchmark agent tool routing precision, argument extraction and
+                multi-turn workflows across FDD, booking and RAG tools.
               </p>
             </li>
             <li className="services__item">
               <i className="uil uil-check-circle services__item-icon"></i>
               <p className="services__info">
-                Built a Neo4j knowledge graph of HVAC equipment hierarchy
-                (Equipment, Location, FEEDS, HAS_LOCATION), with APOC/full-text
-                tools so the agent can search and traverse plant → AHU → VAV
-                without writing raw Cypher.
+                Implemented an MCP agent for live point-condition time series:
+                catalog lookup in DynamoDB, per-point Influx queries and
+                prompt-led date windows.
+              </p>
+            </li>
+            <li className="services__item">
+              <i className="uil uil-check-circle services__item-icon"></i>
+              <p className="services__info">
+                Built a Neo4j knowledge graph of HVAC equipment hierarchy, with
+                APOC/full-text tools so the agent can search and traverse.
               </p>
             </li>
             <li className="services__item">

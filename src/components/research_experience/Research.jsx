@@ -5,7 +5,7 @@ const Research = () => {
   return (
     <section className="qualification research section" id="research">
       <h2 className="section__title">Research Experience</h2>
-      <span className="section__subtitle">Papers & Publications</span>
+      <span className="section__subtitle">Research Works & Publications</span>
       <div className="qualification__container container">
         <div className="qualification__sections">
   
@@ -24,6 +24,17 @@ const Research = () => {
                   corpus and fine‐tuned the multilingual wav2vec 2.0 model,
                   comparing it with a reading corpus (SUBAK.KO) to enhance ASR
                   performance.
+                </span>
+                <span className="research__supervisor">
+                  Conducted under the supervision of{" "}
+                  <a
+                    href="https://sust.edu/departments/cse/faculty/rahmanms@sust.edu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="research__supervisor-link"
+                  >
+                    Dr. Mohammad Shahidur Rahman
+                  </a>
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calender" style={{ marginRight: "8px" }}></i>
@@ -55,6 +66,17 @@ const Research = () => {
                 </span>
                 <span className="research__venue">
                   Published in <em>IEEE Access</em>, vol. 12, pp. 34527–34538, 2024
+                </span>
+                <span className="research__supervisor">
+                  Conducted under the supervision of{" "}
+                  <a
+                    href="https://sust.edu/departments/cse/faculty/rahmanms@sust.edu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="research__supervisor-link"
+                  >
+                    Dr. Mohammad Shahidur Rahman
+                  </a>
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calender" style={{ marginRight: "8px" }}></i>

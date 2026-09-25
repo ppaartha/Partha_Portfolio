@@ -151,7 +151,7 @@ const Header = () => {
                 Contact
               </a>
             </li>
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <a 
                 href="#reference" 
                 className={activeSection === "reference" ? "nav__link active-nav" : "nav__link"}
@@ -160,7 +160,7 @@ const Header = () => {
                 <i className="uil uil-message nav__icon"></i>
                 Reference
               </a>
-            </li>
+            </li> */}
 
           </ul>
           <i

@@ -83,3 +83,21 @@
     font-family: var(--display-font);
     letter-spacing: 0.02em;
 }
+
+.research__supervisor {
+    display: block;
+    margin-top: 0.55rem;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.research__supervisor-link {
+    color: var(--accent-primary);
+    border-bottom: 1px solid rgba(201, 169, 98, 0.45);
+    transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.research__supervisor-link:hover {
+    color: var(--accent-secondary);
+    border-bottom-color: var(--accent-secondary);
+}

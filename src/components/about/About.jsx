@@ -13,7 +13,7 @@ const About = () => {
           <p className="about__description">
             I am Partha Ghosh. I have completed my bachelor's degree in CSE from
             Shahjalal University of Science and Technology, Bangladesh.
-            I currently work at Conneqted Agents as an AI Engineer on{" "}
+            I currently work at ConneqtedAgents as an AI Engineer on{" "}
             <a
               href="https://www.optiify.ai/"
               target="_blank"
