@@ -7,7 +7,7 @@ import Services from "./components/services/Services";
 import Achievement from "./components/achievement/Achievement";
 import Qualification from "./components/education/Qualification";
 import Footer from "./components/footer/Footer";
-import Testimonials from "./components/testimonials/Testimonials";
+// import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Work from "./components/work/Work";
 import Research from "./components/research_experience/Research";
