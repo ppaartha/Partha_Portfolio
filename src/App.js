@@ -12,6 +12,7 @@ import Contact from "./components/contact/Contact";
 import Work from "./components/work/Work";
 import Research from "./components/research_experience/Research";
 // import Score from "./components/score/Score";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -30,8 +31,8 @@ function App() {
         {/* <Testimonials/> */}
         {/* <Score/> */}
         <Footer/>
-      
       </main>
+      <Analytics />
     </>
   );
 }
