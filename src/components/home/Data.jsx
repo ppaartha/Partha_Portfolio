@@ -2,6 +2,28 @@ import React from "react";
 import CV from "../../assets/CV_Partha.pdf";
 
 const Data = () => {
+  const handleDownloadCV = (e) => {
+    e.preventDefault();
+    fetch(CV)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const blobUrl = window.URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = blobUrl;
+        link.download = "CV_Partha.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(blobUrl);
+      })
+      .catch(() => {
+        const link = document.createElement("a");
+        link.href = CV;
+        link.setAttribute("download", "CV_Partha.pdf");
+        link.click();
+      });
+  };
+
   return (
     <div className="home__data">
       <h1 className="home__title">
@@ -31,7 +53,12 @@ const Data = () => {
             ></path>
           </svg>
         </a>
-        <a download="CV_Partha.pdf" href={CV} className="button button--flex">
+        <a
+          download="CV_Partha.pdf"
+          href={CV}
+          onClick={handleDownloadCV}
+          className="button button--flex"
+        >
           Download CV
           <svg
             className="button__icon"
