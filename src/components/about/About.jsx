@@ -44,9 +44,26 @@ const About = () => {
               REVE Chat
             </a>{" "}
             using GraphRAG, LightRAG, multimodal RAG, agentic RAG, BERT, LLaMA
-            and LangChain. For speech I used wav2vec 2.0 and Whisper as STT
-            models and VITS as the TTS model, plus Temporal Fusion Transformer
-            forecasts and a CatVTON virtual try-on for{" "}
+            and LangChain. For speech, I fine-tuned wav2vec 2.0 and Whisper on
+            large Bengali datasets as STT models for{" "}
+            <a
+              href="https://voice.bangla.gov.bd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__link"
+            >
+              Kotha
+            </a>{" "}
+            and fine-tuned VITS across different speakers as the TTS model for{" "}
+            <a
+              href="https://read.bangla.gov.bd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__link"
+            >
+              Uccharon
+            </a>
+            . For{" "}
             <a
               href="https://www.lerevecraze.com/"
               target="_blank"
@@ -55,7 +72,10 @@ const About = () => {
             >
               Le Reve
             </a>
-            .
+            , I developed a Temporal Fusion Transformer (TFT) pipeline to
+            forecast multi-horizon sales and inventory demand based on different
+            product categories, seasonal trends, and store sales reports,
+            alongside a CatVTON-based virtual try-on.
           </p>
           <p className="about__description">
             My research focuses on Bangla speech recognition. I contributed to
