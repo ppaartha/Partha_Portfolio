@@ -11,9 +11,9 @@ const About = () => {
       <div className="about__container container grid">
         <div className="about__data">
           <p className="about__description">
-            I am Partha Ghosh. I have completed my bachelor's degree in CSE from
-            Shahjalal University of Science and Technology, Bangladesh.
-            I currently work at ConneqtedAgents as an AI Engineer on{" "}
+            I am Partha Ghosh, an AI Engineer based in Dhaka, Bangladesh, with a
+            bachelor's degree in CSE from Shahjalal University of Science and
+            Technology (SUST). At ConneqtedAgents, I build{" "}
             <a
               href="https://www.optiify.ai/"
               target="_blank"
@@ -21,9 +21,12 @@ const About = () => {
               className="about__link"
             >
               Optiify
-            </a>{" "}
-            (LangGraph agents, MCP tools, Neo4j equipment graphs, and RAG) and
-            on{" "}
+            </a>
+            , an AI CoPilot for smart building operations and HVAC governance—developing
+            LangGraph multi-agent workflows for tenant after-hours scheduling,
+            real-time fault inspection (FDD), live telemetry MCP tools, Neo4j
+            knowledge graphs, and site-grounded RAG. Alongside Optiify, I train
+            YOLOv8 with SAHI for{" "}
             <a
               href="https://www.quantiify.ai/"
               target="_blank"
@@ -32,9 +35,9 @@ const About = () => {
             >
               Quantiify
             </a>{" "}
-            (YOLOv8 + SAHI for drawing symbol count and legend detection).
-            Previously I worked at REVE Systems (Dhaka, Bangladesh) as a Machine
-            Learning Engineer. I built a RAG-based chatbot for{" "}
+            to detect legends and count symbols on high-resolution construction
+            drawings. Previously at REVE Systems, I built enterprise RAG
+            chatbots for{" "}
             <a
               href="https://www.revechat.com/"
               target="_blank"
@@ -43,9 +46,9 @@ const About = () => {
             >
               REVE Chat
             </a>{" "}
-            using GraphRAG, LightRAG, multimodal RAG, agentic RAG, BERT, LLaMA
-            and LangChain. For speech, I fine-tuned wav2vec 2.0 and Whisper on
-            large Bengali datasets as STT models for{" "}
+            using GraphRAG, LightRAG, multimodal and agentic RAG. For speech, I
+            fine-tuned wav2vec 2.0 and Whisper on large Bengali datasets as STT
+            models for{" "}
             <a
               href="https://voice.bangla.gov.bd/"
               target="_blank"
@@ -73,9 +76,12 @@ const About = () => {
               Le Reve
             </a>
             , I developed a Temporal Fusion Transformer (TFT) pipeline to
-            forecast multi-horizon sales and inventory demand based on different
-            product categories, seasonal trends, and store sales reports,
-            alongside a CatVTON-based virtual try-on.
+            forecast multi-horizon sales and inventory demand based on product
+            categories, seasonal trends, and store sales reports, alongside a
+            CatVTON virtual try-on. I also have experience fine-tuning LLMs using
+            PEFT (LoRA/QLoRA) on Bengali health data, as well as developing
+            custom Model Context Protocol (MCP) tools for agent tool calling and
+            database integrations.
           </p>
           <p className="about__description">
             My research focuses on Bangla speech recognition. I contributed to
